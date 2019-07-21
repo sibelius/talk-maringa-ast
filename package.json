@@ -4,7 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "mdx-deck": "^3.0.7"
+    "mdx-deck": "^3.0.7",
+    "rebass": "^3.1.1",
+    "styled-components": "^4.3.2",
+    "styled-system": "^5.0.15"
   },
   "scripts": {
     "start": "mdx-deck src/deck.mdx",
