@@ -2,11 +2,6 @@ import React from 'react';
 import styled from 'styled-components'
 import { Flex } from 'rebass';
 
-import github from './img/github.png';
-import twitter from './img/twitter.png';
-import me from './img/me.png';
-import entriaLogo from './img/entriaLogo.png';
-
 const IconImage = styled.img`
   max-height: 60px;
   max-width: 60px;
@@ -53,7 +48,7 @@ const SpaceBetween = styled.div`
 `;
 
 export const Root = styled.div([], {
-  width: '50vw',
+  // width: '50vw',
   height: '70vh',
 });
 
@@ -80,23 +75,23 @@ const SocialMediaLink = ({ src, link, username }) => (
 export const Intro = () => (
   <Root>
     <Row>
-      <Me src={me} />
+      <Me src={'./img/me.png'} />
       <MeName>Sibelius Seraphini</MeName>
     </Row>
     <SpaceBetween>
       <SocialMediaLink
-        src={github}
+        src={'./img/github.png'}
         link={'https://github.com/sibelius'}
         username={'@sibelius'}
       />
       <SocialMediaLink
-        src={twitter}
+        src={'./img/twitter.png'}
         link={'https://twitter.com/sseraphini'}
         username={'@sseraphini'}
       />
     </SpaceBetween>
     <Center>
-      <EntriaLogo src={entriaLogo} />
+      <EntriaLogo src={'./img/entriaLogo.png'} />
     </Center>
     <Flex flex={1} alignItems='center' justifyContent='center' mt={30}>
       <MeName>Abstract Engineer</MeName>

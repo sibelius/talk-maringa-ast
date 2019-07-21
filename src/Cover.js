@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
-import { space, width, fontSize, color } from 'styled-system';
-
-import evergreen from './img/evergreen.png';
+import { space, width } from 'styled-system';
 
 export const Root = styled.div([], {
   width: '50vw',
@@ -41,7 +39,7 @@ const MeName = styled.span`
 export const Cover = () => (
   <Root>
     <Center>
-      <Img src={evergreen} width={150} />
+      <Img src={'./img/evergreen.png'} width={150} />
       <Title mt={20}>Practical AST</Title>
       <Subtitle mt={20}>Compilers to Tooling</Subtitle>
       <MeName mt={100}>Sibelius Seraphini</MeName>
