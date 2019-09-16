@@ -39,7 +39,7 @@ export const Center = styled.div`
   flex: 1;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
   ${space}
 `;
 
@@ -59,6 +59,8 @@ export const Feedback = () => (
       <QRCode
         value="https://entria.feedback.house/sibelius"
         size={256}
+        bgColor='#272425'
+        fgColor='white'
       />
     </Center>
     <Center>
